@@ -1,0 +1,11 @@
+[Unit]
+Description=bot_card for deploy
+After=multi-user.target
+[Service]
+Type=simple
+ExecStart=/home/student/bot_card/venv/bin/python3 /home/student/bot_card/bot.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
