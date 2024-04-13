@@ -1,8 +1,20 @@
-1 - Могу разнообразно поприветствовать вас.
-2 - Имею неплохую реализацию оценивания персонажа(по-моему скромному роботовскому мнению).
-3- who - покажу, о ком могу рассказать.
-4 - echo - буду отвечать на ваши сообщения таким же сообщением. 
-    Работает только с текстом и фото (относится к тем словам, которые не входят в другие функции бота).
-5 - rate - позволяет оценить конкретного персонажа.
-6 - my_rates - покажу, как вы оценили моих персонажей.
-7 - А дальше, в зависимости от вашего выбора, расскажу что-нибудь интересное.
+# Bot_card
+This is a CV bot telling about me and my favourite game character
+
+[link to git](https://github.com/NikkyBricky/bot_card.git)
+# Description
+This bot can:
+1. Tell you about some people
+2. allow you to rate them
+
+# Usage:
+If you want to make your bot with the functions like here, I suggest you to:
+ 1. Clone this repository
+ 2. Create .env file with TOKEN variable
+
+If you just want to see it work:
+ 1. go to https://t.me/about_card_bot
+ 2. Choose parameters 
+ 3. See information
+
+Enjoy!
