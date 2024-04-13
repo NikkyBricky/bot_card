@@ -185,12 +185,11 @@ def rate_with_nums(message):
     load_from_js()
     user_data[user_id]['current_rate'] = message.text
     save_to_js()
-    if user_data[user_id]['current_rate_char'] in user_data[user_id]['rates'].keys():
+    if 'current_rate_char' in user_data[user_id].keys():
         if user_data[user_id]['current_rate'] in ['1', '2', '3', '4', '5']:
             ans_rate_keyboard = make_ans_rate_keyboard()
-            bot.send_message(message.chat.id, f'Вы хотите поставить оценку персонажу '
-                             f'"{user_data[user_id]['current_rate_char']} "?',
-                             reply_markup=ans_rate_keyboard)
+            bot.send_message(message.chat.id, 'Вы хотите поставить оценку персонажу ' +
+                             user_data[user_id]['current_rate_char'] + '?', reply_markup=ans_rate_keyboard)
         else:
             bot.send_message(message.chat.id, 'Кажется, вы отправили неверное число.'
                                               ' Если вы хотите оценить персонажа, '
