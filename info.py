@@ -54,13 +54,13 @@ class AboutMe:
 
     @staticmethod
     def about_age():
-        about = f'Сейчас мне {AboutMe.all_inf['age']} лет.'
+        about = f"Сейчас мне {AboutMe.all_inf['age']} лет."
         return about
 
     @staticmethod
     def about_hobbies():
         about = (f'Вот некоторые из моих хобби: \n'
-                 f'{AboutMe.all_inf['hobbies']}')
+                 f"{AboutMe.all_inf['hobbies']}")
         return about
 
     @staticmethod
@@ -122,23 +122,23 @@ class AboutCharacter:
 
     @staticmethod
     def about_age():
-        about = f'Мне {AboutCharacter.all_inf['age']} лет.'
+        about = f"Мне {AboutCharacter.all_inf['age']} лет."
         return about
 
     @staticmethod
     def about_hobbies():
         about = (f'Вот некоторые из моих хобби: \n'
-                 f'{AboutCharacter.all_inf['hobbies']}')
+                 f"{AboutCharacter.all_inf['hobbies']}")
         return about
 
     @staticmethod
     def about_interests():
         about = (f'Вот некоторые из моих интересов: \n'
-                 f'{AboutCharacter.all_inf['interests']}')
+                 f"{AboutCharacter.all_inf['interests']}")
         return about
 
     @staticmethod
     def about_history():
         about = (f'Вот моя история: \n'
-                 f'{AboutCharacter.all_inf['history']}')
+                 f"{AboutCharacter.all_inf['history']}")
         return about
