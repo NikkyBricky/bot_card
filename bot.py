@@ -380,9 +380,8 @@ def save_rate(call):
         user_data[user_id]['rates'][user_data[user_id]['current_rate_char']] = call.data
         save_to_js()
         bot.edit_message_text(chat_id=call.message.chat.id, message_id=call.message.message_id,
-                              text=f'Получил вашу оценку ({call.data}) для персонажа '
-                              f'"{user_data[user_id]['current_rate_char']}"',
-                              reply_markup=None)
+                              text=f'Получил вашу оценку ({call.data}) для персонажа "' +
+                              user_data[user_id]['current_rate_char'] + '"', reply_markup=None)
         bot.send_message(call.message.chat.id, 'Спасибо за вашу оценку!\n'
                                                'Посмотреть свои оценки вы можете в разделе "Мои оценки" или, '
                                                'используя команду /my_rates')
